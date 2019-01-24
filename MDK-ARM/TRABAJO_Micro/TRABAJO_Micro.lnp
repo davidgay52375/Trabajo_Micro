@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"trabajo_micro\startup_stm32f411xe.o"
+"trabajo_micro\main.o"
+"trabajo_micro\stm32f4xx_it.o"
+"trabajo_micro\stm32f4xx_hal_msp.o"
+"trabajo_micro\stm32f4xx_hal_adc.o"
+"trabajo_micro\stm32f4xx_hal_adc_ex.o"
+"trabajo_micro\stm32f4xx_hal_tim.o"
+"trabajo_micro\stm32f4xx_hal_tim_ex.o"
+"trabajo_micro\stm32f4xx_hal_rcc.o"
+"trabajo_micro\stm32f4xx_hal_rcc_ex.o"
+"trabajo_micro\stm32f4xx_hal_flash.o"
+"trabajo_micro\stm32f4xx_hal_flash_ex.o"
+"trabajo_micro\stm32f4xx_hal_flash_ramfunc.o"
+"trabajo_micro\stm32f4xx_hal_gpio.o"
+"trabajo_micro\stm32f4xx_hal_dma_ex.o"
+"trabajo_micro\stm32f4xx_hal_dma.o"
+"trabajo_micro\stm32f4xx_hal_pwr.o"
+"trabajo_micro\stm32f4xx_hal_pwr_ex.o"
+"trabajo_micro\stm32f4xx_hal_cortex.o"
+"trabajo_micro\stm32f4xx_hal.o"
+"trabajo_micro\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "TRABAJO_Micro\TRABAJO_Micro.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TRABAJO_Micro.map" -o TRABAJO_Micro\TRABAJO_Micro.axf
